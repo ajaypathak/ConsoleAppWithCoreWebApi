@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ApiBackend.Responses
 {
-    public class UserResponse:BaseResponse
+    public class UserResponse : BaseResponse
     {
         public List<User> UserList { get; set; }
         public UserResponse()

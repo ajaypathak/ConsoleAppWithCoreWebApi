@@ -17,10 +17,16 @@ namespace ApiBackend.Controllers
         {
         }
 
-      
+
         public async Task<ActionResult<UserResponse>> GetUserDetails()
         {
             return await Execute<UserRequest, UserResponse>(new UserRequest());
+
+        }
+        [HttpPost]
+        public async Task<ActionResult<UpdateUserResponse>> UpdateUserDetails()
+        {
+            return await Execute<UpdateUserRequest, UpdateUserResponse>(new UpdateUserRequest());
 
         }
     }

@@ -30,7 +30,4 @@ namespace ApiBackend.Handlers
             return await Task.FromResult(response);
         }
     }
-    public abstract class HandlerBase
-    {
-    }
 }
